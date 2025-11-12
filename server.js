@@ -10,7 +10,17 @@ const userRoutes = require("./routes/userRoutes");
 
 const app = express();
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: [
+    'https://isaar.in',
+    'https://www.isaar.in',
+    'https://admin.isaar.in',
+    'https://isar-main.onrender.com',
+    'https://main.d3dfmh442d4tq3.amplifyapp.com' // ✅ your new Amplify build!
+  ],
+  credentials: true
+}));
+
   
 
 
