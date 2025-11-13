@@ -1,12 +1,5 @@
-﻿# Node / env
-node_modules/
+﻿node_modules/
 .env
-npm-debug.log
-.DS_Store
-
-# ignore everything in uploads (uploaded files)
 uploads/*
-
-# but allow the resumes folder and its .gitkeep so folder structure is tracked
 !uploads/resumes/
 !uploads/resumes/.gitkeep
